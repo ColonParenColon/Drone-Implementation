@@ -1,100 +1,74 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
-
-/**
- *
- * @author cac65
- */
+package Project2;
 public class Item {
-   private String name;
+    private String name;
     private int price;
-    private int xLoc;
-    private int yLoc;
-    private int length;
+    private int x;
+    private int y;
     private int width;
     private int height;
-    
-    
-    public void addItem(String inName, int inPrice, int inX, int inY, int inLength, int inWidth, int inHeight)
+
+
+    Item(String name, int price, int x, int y, int width, int height)
     {
-        this.name = inName;
-        this.price = inPrice;
-        this.xLoc = inX;
-        this.yLoc = inY;
-        this.length = inLength;
-        this.width = inWidth;
-        this.height = inHeight;
+        this.name = name;
+        this.price = price;
+        this.x = x;
+        this.y = y;
+        this.width = width;
+        this.height = height;
     }
-    
-    public String toString()
-    {
-        return this.getName();
-    }
-    
+
     public String getName()
     {
-        return name;
+        return this.name;
     }
-    public void setName(String inputName)
+    public void setName(String name)
     {
-        this.name = inputName;
+        this.name = name;
     }
-    
+
     public int getPrice()
     {
-        return price;
+        return this.price;
     }
-    public void setPrice(int inputPrice)
+    public void setPrice(int price)
     {
-        this.price = inputPrice;
+        this.price = price;
     }
-    
-    public int getXLoc()
+
+    public int getX()
     {
-        return xLoc;
+        return this.x;
     }
-    public void setXLoc(int inputXLoc)
+    public void setX(int x)
     {
-        this.xLoc = inputXLoc;
+        this.x = x;
     }
-    
-    public int getYLoc()
+
+    public int getY()
     {
-        return yLoc;
+        return this.y;
     }
-    public void setYLoc(int inputYLoc)
+    public void setY(int y)
     {
-        this.yLoc = inputYLoc;
+        this.y = y;
     }
-    
-    public int getLength()
-    {
-        return length;
-    }
-    public void setLength(int inputLength)
-    {
-        this.length = inputLength;
-    }
-    
+
     public int getWidth()
     {
-        return width;
+        return this.width;
     }
-    public void setWidth(int inputWidth)
+    public void setWidth(int width)
     {
-        this.width = inputWidth;
+        this.width = width;
     }
-    
+
     public int getHeight()
     {
-        return height;
+        return this.height;
     }
-    public void setHeight(int inputHeight)
+    public void setHeight(int height)
     {
-        this.height = inputHeight;
+        this.height = height;
     }
-    
-    
 }
